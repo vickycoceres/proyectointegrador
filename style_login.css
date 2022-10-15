@@ -1,0 +1,99 @@
+body {
+  background: linear-gradient(120deg, var(--clr-prim-1), var(--clr-prim-2));
+}
+@media (max-width: 500px) {
+  html {
+    font-size: clamp(40%, 2vw, 62.5%);
+  }
+}
+
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  background-color: var(--clr-background);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px hsl(0 0% 0% / 0.206);
+}
+.centro h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-block: 2.3rem;
+  border-bottom: 1px solid hsl(0 0% 30%);
+}
+.centro form {
+  padding-inline: 6rem;
+}
+
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid hsl(0 0% 68%);
+  margin-block: 3.7rem;
+}
+
+.txt_field input, .txt_field label, .pass {
+  font-size: 1.6rem;
+}
+.txt_field input {
+  background-color: transparent;
+  padding-left: 0.5rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  color: hsl(0 0% 68%);
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -0.5rem;
+}
+.pass {
+  text-align: center;
+  color: hsl(0 0% 65%);
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="submit"], .signup_link {
+  margin-bottom: 4rem;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid;
+  margin-top: 1rem;
+  background-color: var(--clr-prim-2);
+  border-radius: 25px;
+  font-size: 1.8rem;
+  color: hsl(203 69% 95%);
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  border-color: var(--clr-prim-1);
+  transition: .5s;
+}
+.signup_link {
+  text-align: center;
+  font-size: 1.6rem;
+  color: hsl(0 0% 40%);
+}
+.signup_link a {
+  text-decoration: none;
+}
+.signup_link a:hover {
+  text-decoration: underline;
+}

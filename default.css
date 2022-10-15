@@ -1,0 +1,25 @@
+:root {
+  --clr-prim-1: rgb(82, 35, 143);
+  --clr-prim-2: rgb(91, 50, 103);
+  --clr-background: hsl(1 0% 10%);
+  --clr-text: hsl(1 0% 95%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--clr-text);
+  font-family: 'Josefin Sans', sans-serif;
+}
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%; /* 10 pixeles por defecto */
+}
+body {
+  line-height: 1.5;
+  background-color: var(--clr-background);
+}
